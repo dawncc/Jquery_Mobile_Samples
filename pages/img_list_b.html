@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>ͼƬչʾ</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<link href="../css/photoswipe.css" type="text/css" rel="stylesheet" />
+
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	<script type="text/javascript" src="../lib/klass.min.js"></script>
+	<script type="text/javascript" src="../lib/photoswipe.min.js"></script>
+
+<script type="text/javascript">
+
+		(function(window, PhotoSwipe){
+		
+			document.addEventListener('DOMContentLoaded', function(){
+			
+				var
+					options = {},
+					instance = PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), options );
+			
+			}, false);
+			
+			
+		}(window, window.Code.PhotoSwipe));
+		
+	</script>
+
+</head> 
+<body>
+	<div data-role="page" id="mainPage">
+
+		<div data-role="header">
+			<h2>ͼƬչʾ</h2>
+		</div>
+		<!-- /header -->
+		<div data-role="content"> 
+			<ul data-role="listview" id="Gallery">
+				<li>
+					<a href="F:\GitHub\Jquery_Mobile_Samples\images\d.png">
+						<span>	<img src="../images/d.png" alt="img"/></span>
+					</a>
+				</li>
+				<li>
+					<a href="F:\GitHub\Jquery_Mobile_Samples\images\d.png">
+						<span>	<img src="../images/d.png" alt="img"/></span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span>	<img src="../images/d.png" alt="img"/></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- /content -->
+		<div data-role="footer" data-id="myFooter" data-position="fixed">
+			<div data-role="navbar" data-iconpos="top" > 
+				<ul>
+					<li> <a href="#"  data-icon="gear"></a></li>
+					<li> <a href="#"  data-icon="plus"></a></li>
+					<li> <a href="#"  data-icon="star"></a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- /footer -->
+	</div><!-- /page -->
+</body>
+</html>
